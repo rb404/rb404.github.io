@@ -3230,6 +3230,19 @@ canvas {
 	color: white;
   }
 
+/* Trading Header */
+#trading {
+    width: 100%;
+    height: 100%;
+    background-color: #437993;
+    background-image: url('images/trading.gif');
+    background-size: cover;
+    background-position: 50% 230%;
+    background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	background-attachment: fixed;	
+}
 /* Lab Header */
 
 .imgcontainer {

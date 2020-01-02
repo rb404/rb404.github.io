@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ryan Brown's Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="navbar">
+			<a href="index.html">Home</a>
+			<a href="/index.html#three">Experience</a>
+			<a href="contact.html">Contact</a>
+			<a href="resume.html">Resume</a>
+		</div>
+		<!--p Header -->
+
+		<div id="trading"></div>
+		<section id="labHeader">
+			<div class="inner">
+				<h1><strong><mark>MetaTrader 4 Trading Scripts</mark></strong><br></h1>
+			</div>
+		</section>
+	
+
+	<!-- One -->
+	<section id="one" class="main style1">
+		<div class="container">
+			<div class="row gtr-150">
+				<section>
+				<header class="major">
+					<h2>MetaTrader 4</h2>
+				</header>
+
+				<p>MetaTrader 4, also known as MT4, is an electronic trading platform widely used by online retail foreign exchange speculative traders. 
+					The following page is dedicated to various MetaTrader 4 scripts that I have learned to create that execute simple long and short positions
+					based off of the indicator the script observes. The scripts are implemented to execute trades at high and low frequencies depending on
+					the strategy.</p>
+					<hr />
+				</section>
+	</section>
+
+	
+	<section id="one" class="main style1">
+		<div class="container">
+	
+			<div class="col-12 col-6-medium">
+	
+				<header class="major">
+					<h3>Moving Average Crossover</h3>
+				</header>
+					<h3></h4>
+					<p>
+						The moving average (MA) is a simple technical analysis tool that smooths out 
+						price data by creating a constantly updated average price. The average is taken 
+						over a specific period of time, like 10 days, 20 minutes, 30 weeks, etc... Crossovers 
+						are one of the main moving average strategies. We can apply two moving averages 
+						to a chart with one being over a longer period of time and the other one being over a 
+						shorter period of time. When the short term MA crosses above the long term MA, 
+						it's a buy signal and can indicate a trend is shifting up. On the other hand, if the 
+						short term MA crosses below the long term MA, it is a sell signal and can indicate a
+						trend is shifting down.
+					</p>
+
+					<div style = "text-align: center; margin: 0 auto">
+
+						<img src="images/MACrossover.gif" style = "width: 70%;"alt="" />
+
+					</div>
+					<br>
+					<h4>MA Crossover Results</h4>
+					<h5>Initial Deposit 500.00</h5>
+					<h5>1:200 leverage</h5>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Time</th>
+									<th>Type</th>
+									<th>Order</th>
+									<th>Size</th>
+									<th>Price</th>
+									<th>Take Profit</th>
+									<th>Profit</th>
+									<th>Balance</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+								<tr>
+									<td>2019.09.01 19:31</td>
+									<td>sell</td>
+									<td>1</td>
+									<td>0.10</td>
+									<td>1.09900</td>
+									<td>1.09750</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2019.09.02 04:55</td>
+									<td>t/p</td>
+									<td>1</td>
+									<td>0.10</td>
+									<td>1.09750</td>
+									<td>1.09750</td>
+									<td>15.59</td>
+									<td>515.59</td>
+								</tr>
+								<tr>
+									<td>2019.09.02 06:38</td>
+									<td>buy</td>
+									<td>2</td>
+									<td>0.10</td>
+									<td>1.09695</td>
+									<td>1.09845</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2019.09.04 02:39</td>
+									<td>t/p</td>
+									<td>2</td>
+									<td>0.10</td>
+									<td>1.09845</td>
+									<td>1.09845</td>
+									<td>12.30</td>
+									<td>527.88</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="7"></td>
+									<td>527.88</td>
+								</tr>
+							</tfoot>
+						</table>
+
+					<p>
+						The above example is taken from an MT4 backtesting data of the EUR/USD per minute. The script implemented above
+						opens and closes buy position as well as opens and closes sell positions based off of the 30 candlestick
+						MA (Red) and the 100 candlestick MA (Blue).
+					</p>
+				</div>
+
+				<hr />
+
+
+			</section>
+	</section>
+
+
+            <!-- Footer -->
+            <section id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/RyanBrownUmich/" target="_blank"
+                            class="icon brands alt fa-linkedin"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://github.com/rb404" target="_blank" class="icon brands alt fa-github"><span
+                                class="label">GitHub</span></a></li>
+                    <li><a href="mailto:broryan@umich.edu" target="_blank" class="icon solid alt fa-envelope"><span
+                                class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Ryan Brown</li>
+                    <li>broryan@umich.edu</li>
+                </ul>
+            </section>
+
+		<!-- Scripts -->
+			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
