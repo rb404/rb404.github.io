@@ -3270,8 +3270,6 @@ img.wrap {float: left}
 	position: absolute;
 	z-index: -1;
 	background-attachment: fixed;	
-	filter: blur(1px);
-	-webkit-filter: blur(1px);
 }
 
 #labHeader {
