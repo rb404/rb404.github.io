@@ -2624,12 +2624,13 @@ body {
 
 		ul, li{
 			margin:0;
-			padding:0 0 0 15px;    
+			padding:0 0 0 15px;
+			text-align: left;    
 		}
 			
 		.column{
 			float: left;
-			margin: 0 -80px 0 235px;
+			width: 45%;
 		}
 
 		.center {
@@ -3274,6 +3275,25 @@ canvas {
 
 img.wrap {float: left}
 
+
+.bg-text {
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */
+	backdrop-filter: blur(3px);
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+  }
+
+
 #lab {
     width: 100%;
     height: 100%;
@@ -3300,21 +3320,8 @@ img.wrap {float: left}
 }
 
 	#labHeader h1, #labHeader h2, #labHeader h3, #labHeader h4, #labHeader h5, #labHeader h6, #labHeader strong, #labHeader b {
-		background-color: rgb(0,0,0); /* Fallback color */
-		background-color: rgb(0,0,0,0.1); /* Black w/opacity/see-through */
-		backdrop-filter: blur(3px);
-		color: white;
+		color: #ffffff;
 		font-weight: bold;
-		font-size: 30pt;
-		border: 3px solid #f1f1f1;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 2;
-		width: 100%;
-		padding: 20px;
-		text-align: center;
 	}
 
 	#labHeader ul.major-icons li .icon {
