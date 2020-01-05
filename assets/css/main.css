@@ -3230,6 +3230,21 @@ canvas {
 	color: white;
   }
 
+  
+/* Art Header */
+#art {
+    width: 100%;
+    height: 100%;
+    background-color: #437993;
+    background-image: url('images/Space.jpg');
+    background-size: cover;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	background-attachment: fixed;	
+}
+
 /* Trading Header */
 #trading {
     width: 100%;
