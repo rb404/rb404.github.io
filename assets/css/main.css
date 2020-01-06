@@ -3237,7 +3237,7 @@ canvas {
     width: 100%;
     height: 100%;
     background-color: #437993;
-    background-image: url('images/Space.jpg');
+    background-image: url('images/SpaceOpt.jpg');
     background-size: cover;
     background-position: 50% 90%;
     background-repeat: no-repeat;
@@ -3251,7 +3251,7 @@ canvas {
     width: 100%;
     height: 100%;
     background-color: #437993;
-    background-image: url('images/trading.gif');
+    background-image: url('images/tradingOpt.gif');
     background-size: cover;
     background-position: 50% 230%;
     background-repeat: no-repeat;
@@ -3282,6 +3282,7 @@ img.wrap {float: left}
 	backdrop-filter: blur(3px);
 	color: white;
 	font-weight: bold;
+	font-size: 16pt;
 	border: 3px solid #f1f1f1;
 	position: absolute;
 	top: 50%;
@@ -3728,14 +3729,16 @@ img.wrap {float: left}
 		}
 
 		#footer .icons {
-			margin: 0;
+			margin: 0 auto;
+			text-align: center;
 		}
 
 		#footer .copyright {
 			font-size: 0.8em;
 			list-style: none;
-			margin: 2em 0 0 0;
+			margin: 2em auto 0 auto;
 			padding: 0;
+			text-align: center;
 		}
 
 			#footer .copyright li {
